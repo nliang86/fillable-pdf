@@ -142,10 +142,10 @@ An instance of `FillablePDF` has the following methods at its disposal:
     # output example: '/Btn'
 
     # list of all field types
-    Field::BUTTON ('/Btn')
-    Field::CHOICE ('/Ch')
-    Field::SIGNATURE ('/Sig')
-    Field::TEXT ('/Tx')
+    FillablePdf::Field::BUTTON ('/Btn')
+    FillablePdf::Field::CHOICE ('/Ch')
+    FillablePdf::Field::SIGNATURE ('/Sig')
+    FillablePdf::Field::TEXT ('/Tx')
     ```
 
 * `fields`
@@ -357,7 +357,7 @@ puts "Values: #{pdf.values}"
 puts
 
 # Checking field type
-if pdf.field_type(:football) == Field::BUTTON
+if pdf.field_type(:football) == FillablePdf::Field::BUTTON
   puts "Field 'football' is of type BUTTON"
 else
   puts "Field 'football' is not of type BUTTON"
