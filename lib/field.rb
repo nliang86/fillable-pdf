@@ -1,6 +1,6 @@
 require_relative 'fillable-pdf/itext'
 
-class FillablePdf
+class FillablePDF
   module Field
     # PdfName has a constant "A" and a constant "a". Unfortunately, RJB does not differentiate
     # between these constants and tries to create the same constant ("A") for both, which causes
